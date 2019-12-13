@@ -178,8 +178,8 @@ if __name__ == "__main__":
             init_canvas[i].append('.')
 
     ops, vis, can, pos = paint_bot(OP_CODE + [0] * 500, init_canvas, (int(SIZE / 2 - 1), int(SIZE / 2 - 1)))
-
     print("Answer 1:", len(set(vis)))
+    print_canvas(can)
 
     init_canvas = []
     for i in range(SIZE):
